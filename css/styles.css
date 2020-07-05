@@ -254,6 +254,10 @@ a {
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
+  background-image: url(../images/antenna.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; 
 }
 
 .features .features-item + .features-item {
