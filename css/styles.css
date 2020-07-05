@@ -36,6 +36,7 @@ a {
   text-decoration: none;
 }
 
+
 .images {
   display: block;
 }
@@ -46,13 +47,24 @@ a {
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
-  /* outline: 1px solid tomato; */
-  /* background-color: tomato; */
 }
 
-/* .container.no-padding {
-  padding-bottom: 0;
-} */
+.contacts-link::before {
+  display: block;
+  content: "";
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-envelope::before {
+  background-image: url(../images/envelope.svg);
+}
+
+.icon-phone::before {
+  background-image: url(../images/phone.svg);
+}
 
 .section {
   padding-top: 94px;
