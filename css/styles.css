@@ -36,7 +36,6 @@ a {
   text-decoration: none;
 }
 
-
 .images {
   display: block;
 }
@@ -47,23 +46,6 @@ a {
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
-}
-
-.contacts-link::before {
-  display: block;
-  content: "";
-  height: 16px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon-envelope::before {
-  background-image: url(../images/envelope.svg);
-}
-
-.icon-phone::before {
-  background-image: url(../images/phone.svg);
 }
 
 .section {
@@ -158,7 +140,7 @@ a {
   margin-left: 30px;
 }
 
-.contacts .contacts-link {
+.contacts-link {
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -169,9 +151,19 @@ a {
   color: var(--secondary-text-color);
 }
 
-.contacts .contacts-link:hover,
-.contacts .contacts-link:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--accent-color);
+}
+
+.contacts-icon {
+  width: 16px;
+  height: 11px;
+  fill: currentColor;
+}
+
+.contacts-icon:hover {
+  fill: var(--accent-color);
 }
 
 /* Герой */
@@ -187,13 +179,16 @@ a {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Hero.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/Hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; 
-
+  background-size: cover;
 }
-
 
 .hero-title {
   margin-top: 0;
@@ -254,10 +249,10 @@ a {
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
-  background-image: url(../images/antenna.svg);
+  /* background-image: url(../images/antenna.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain; 
+  background-size: contain; */
 }
 
 .features .features-item + .features-item {
@@ -417,6 +412,17 @@ a {
 
 .team-soclink-list:not(:last-child) {
   margin-right: 10px;
+}
+
+.team-soclink-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--customers-logo);
+  padding: 0px;
+  margin: 0px;
+  width: 44px;
+  height: 44px;
 }
 
 /* Клиенты */
