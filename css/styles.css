@@ -25,6 +25,7 @@
   --footer-background-color: #2f303a;
   --footer-info: rgba(255, 255, 255, 0.6);
   --footer-copyright-color: rgba(255, 255, 255, 0.4);
+  --soclink-color: #afb1b8;
 }
 
 body {
@@ -418,11 +419,17 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: var(--customers-logo);
+  fill: var(--soclink-color);
   padding: 0px;
   margin: 0px;
   width: 44px;
   height: 44px;
+  border-radius: 50%;
+}
+
+.team-soclink-icon:hover {
+  fill: var(--white-color);
+  background-color: var(--accent-color);
 }
 
 /* Клиенты */
