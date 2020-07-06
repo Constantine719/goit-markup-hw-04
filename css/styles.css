@@ -25,7 +25,7 @@
   --footer-background-color: #2f303a;
   --footer-info: rgba(255, 255, 255, 0.6);
   --footer-copyright-color: rgba(255, 255, 255, 0.4);
-  --soclink-color: #afb1b8;
+  --icon-color: #afb1b8;
 }
 
 body {
@@ -419,7 +419,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: var(--soclink-color);
+  fill: var(--icon-color);
   padding: 0px;
   margin: 0px;
   width: 44px;
@@ -427,7 +427,8 @@ a {
   border-radius: 50%;
 }
 
-.team-soclink-icon:hover {
+.team-soclink-icon:hover,
+.team-soclink-icon:focus {
   fill: var(--white-color);
   background-color: var(--accent-color);
 }
@@ -465,6 +466,25 @@ a {
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
+}
+
+.customers-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--icon-color);
+  padding: 0px;
+  margin: 0px;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+}
+
+.customers-icon:hover,
+.customers-icon:focus {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 /* Футер */
