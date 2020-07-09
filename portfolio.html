@@ -34,19 +34,25 @@
 
         <ul class="contacts list">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="contacts-link"
-              >info@devstudio.com</a
+            <a href="mailto:info@devstudio.com" class="contacts-link">
+              <svg class="contacts-icon" width="16px" height="11px">
+                <use href="./images/symbol-defs.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li class="item">
             <a href="tel:+380961111111" class="contacts-link"
-              >+38 096 111 11 11</a
+              ><svg class="contacts-icon" width="10px" height="15px">
+                <use href="./images/symbol-defs.svg#phone"></use>
+              </svg>
+              +38 096 111 11 11</a
             >
           </li>
         </ul>
       </div>
     </header>
-
+    
     <main>
       <section class="section-portf">
         <!-- Кнопки фильтров -->
@@ -234,11 +240,11 @@
       </section>
     </main>
 
-    <!--Секция подвала-->
+    <!--Секция футера-->
     <footer class="footer">
       <div class="container">
         <div class="footer-div">
-          <div>
+          <div class="footer-adress">
             <a href="./index.html" class="logo">
               <div class="footer-logo-div">
                 <span class="logo-web">Web</span>
@@ -257,33 +263,45 @@
               >
             </address>
           </div>
-          <div>
+          <div class="footer-links">
             <h3 class="footer-text-joinin">присоединяйтесь</h3>
             <ul class="joinin list">
               <li class="joinin-list">
-                <a href="https://instagram.com">
-                  <img src="./images/Instagramf.svg" alt="instagram" />
+                <a href="https://instagram.com" class="joinin-soclink-icon">
+                  <svg class="footer-icon" width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#instagram"></use>
+                  </svg>
                 </a>
               </li>
               <li class="joinin-list">
-                <a href="https://instagram.com">
-                  <img src="./images/Twitterf.svg" alt="twitter" />
+                <a href="https://instagram.com" class="joinin-soclink-icon">
+                  <svg class="footer-icon" width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#twitter"></use>
+                  </svg>
                 </a>
               </li>
               <li class="joinin-list">
-                <a href="https://instagram.com">
-                  <img src="./images/Facebookf.svg" alt="facebook" />
+                <a href="https://instagram.com" class="joinin-soclink-icon">
+                  <svg class="footer-icon" width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#facebook"></use>
+                  </svg>
                 </a>
               </li>
               <li class="joinin-list">
-                <a href="https://instagram.com">
-                  <img src="./images/Linkedihf.svg" alt="linkedin" />
+                <a href="https://instagram.com" class="joinin-soclink-icon">
+                  <svg class="footer-icon" width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#linkedin"></use>
+                  </svg>
                 </a>
               </li>
             </ul>
           </div>
           <p class="footer-text-subscripe">подпишитесь на рассылку</p>
-          <a href="" class="button">Подписаться</a>
+          <a href="" class="button-footer">Подписаться
+            <svg class="footer-icon-plane" width="24px" height="24px">
+              <use href="./images/symbol-defs.svg#plane"></use>
+            </svg>
+          </a>
           <!-- <p class="footer-copyright">2020 | Developed by GoIT Students</p> -->
         </div>
       </div>

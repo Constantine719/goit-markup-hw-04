@@ -606,6 +606,16 @@ a {
   color: var(--white-color);
 }
 
+.button-footer {
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer-icon-plane {
+  fill: var(--white-color);
+  margin-left: 10px;
+}
+
 /* .footer-copyright {
   font-family: Roboto;
   font-style: normal;
@@ -690,8 +700,11 @@ a {
   background: var(--white-color);
   border: 1px solid #eeeeee;
   box-sizing: border-box;
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+.works-project-list:hover {
+box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .project-links {
